@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Tema = () => {
     const [tema, setTema] = useState("claro");
+    const { t } = useTranslation();
     const estilos = {
         claro: {
             backgroundColor: "#f0f0f0",
@@ -18,8 +20,7 @@ const Tema = () => {
     };
     return(
         <div style={estilos[tema]}>
-            <h1> Currículo</h1>
-            <button onClick={alterarTema}>Alterar tema</button>
+            <button onClick={alterarTema}>{t('section.alterarTema')}</button>
         </div>
     );
 };

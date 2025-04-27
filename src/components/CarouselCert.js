@@ -23,7 +23,6 @@ const CarouselCert = ({certificados}) => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        backgroundColor: "#f4f4f9",
         }}>
             <Slider {...settings}style= {{width: "80%", maxWidth: "800px"}}>
                 {certificados.map((certificado, index) => (

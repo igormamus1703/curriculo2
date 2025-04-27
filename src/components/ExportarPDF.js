@@ -1,6 +1,9 @@
 import jsPDF from "jspdf";
+import { useTranslation } from 'react-i18next';
 
 const ExportarPDF = ({ dados }) => {
+  const { t } = useTranslation();
+
   const gerarPDF = () => {
     const pdf = new jsPDF({ unit: "pt", format: "a4" });
     const margin = 40;
@@ -111,7 +114,7 @@ const ExportarPDF = ({ dados }) => {
       onClick={gerarPDF}
       style={{ padding: "8px 16px", fontSize: "14px", cursor: "pointer" }}
     >
-      Exportar para PDF
+      {t('section.exportPDF')}
     </button>
   );
 };

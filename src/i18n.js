@@ -14,7 +14,9 @@ const recursos = {
                 experience: "Professional Experience", 
                 skills: "Technical Skills",
                 social:"Network",
-                certificates: "Certifications"
+                certificates: "Certifications",
+                alterarTema: "Change Theme",
+                exportPDF: "Save PDF",
             },
             content: { // <-- Nova seção para conteúdos dinâmicos
                 profileDescription: "Computer Science student with hands-on experience in full-stack development. Proficient in Java ecosystem and modern frameworks for building robust APIs and responsive interfaces.",
@@ -46,10 +48,12 @@ const recursos = {
                 experience: "Experiência Profissional", 
                 skills: "Habilidades Técnicas",
                 social:"Redes",
-                certificates: "Certificados"
+                certificates: "Certificados",
+                alterarTema: "Alterar Tema",
+                exportPDF: "Exportar PDF",
             },
             content: { // 
-                profileDescription: "Estudante de Engenharia de Software com experiência prática em desenvolvimento full-stack. Domínio do ecossistema Java e frameworks modernos para construção de APIs robustas e interfaces responsivas.",
+                profileDescription: "Estudante de Ciência da Computação na PUCPR com experiência prática em desenvolvimento full-stack. Domínio do ecossistema Java e frameworks modernos para construção de APIs robustas e interfaces responsivas.",
                 experiences: [
                     {
                         position: "Estagiário em Desenvolvimento de Software",

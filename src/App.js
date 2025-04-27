@@ -5,14 +5,13 @@ import Experiencia from './components/Experiencia';
 import Header from './components/Header';
 import Perfil from './components/Perfil';
 import ExportarPDF from './components/ExportarPDF';
-import Tema from './components/Tema';
 import CarouselCert from './components/CarouselCert';
 import SocialLinks from './components/SocialLinks';
 import "./i18n"; 
 import { useTranslation } from 'react-i18next'; // Importando o hook useTranslation do react-i18next
 import Foto from './components/Foto'; // Importando o componente Foto
 import fotoPerfil from "./assets/fotoTerno.jpeg";
-
+import { useState } from 'react';
 function App() {
 
   const {t, i18n} = useTranslation(); // Hook para usar traduções o que seria um Hook? o hook é uma função que permite usar o estado e outros recursos do React sem escrever uma classe.
@@ -20,6 +19,30 @@ function App() {
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   }
+
+  const [tema, setTema] = useState("claro");
+  const estilos = {
+      claro: {
+          backgroundColor: "#f0f0f0",
+          color: "#222",
+          transition: "all 0.5s ease",
+          fontFamily: "Arial, sans-serif",
+          minHeight: "100vh",
+          padding: "20px"
+      },
+      escuro: {
+          backgroundColor: "#000",
+          color: "#e0e0e0",
+          transition: "all 0.5s ease",
+          fontFamily: "Arial, sans-serif",
+          minHeight: "100vh",
+          padding: "20px"
+      },
+  };
+  const alterarTema = () => {
+      setTema(tema === "claro" ? "escuro" : "claro");
+
+  };
   // alimentar o componente gerais
   const dados = {
     nome: "Igor Mamus dos Santos",
@@ -146,42 +169,42 @@ function App() {
   ];
   // arrumar tema e exportar pdf
   return (
-    <div className="App">
-      {/* Botões para trocar de idioma */}
-      <div className="botaoIdioma">
-        <button onClick={() => changeLanguage("pt")}>Português</button>
-        <button onClick={() => changeLanguage("en")}>English</button>
-      </div>
-      <div>
-        <table style={{width: "100%"}}>
-          <tr>
-            <td style={{width: "10%"}}>
-              <Foto></Foto>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <Tema/> 
-      <Header nome={dados.nome} titulo={dados.titulo}/>
-      <Perfil descricao={dados.descricao}/>
-      <div>
-        <h1>{t("section.social")}</h1>
-        <SocialLinks links={socialLinks}/>
-      </div>
-      <Experiencia experiencias={dados.experiencias}/>
-      <div>
-        <h1>{t("section.skills")}</h1>
+    <div className="App" style={estilos[tema]}>
+      <div >
+            <button onClick={alterarTema}>{t('section.alterarTema')}</button>
+        
+        {/* Botões para trocar de idioma */}
+        <div className="botaoIdioma">
+          <button onClick={() => changeLanguage("pt")}>Português</button>
+          <button onClick={() => changeLanguage("en")}>English</button>
         </div>
-      <Habilidades habilidades={dados.habilidades}/>
-      <ExportarPDF dados={dados}/>
+        <div className='perfil-container'>
+            <Foto></Foto>
+            <div class='perfil-texto'>
+              <Header nome={dados.nome} titulo={dados.titulo}/>
+              <Perfil descricao={dados.descricao}/>    
+            </div>   
+        </div>
+        
+        
+        <div>
+          <h1>{t("section.social")}</h1>
+          <SocialLinks links={socialLinks}/>
+        </div>
+        <Experiencia experiencias={dados.experiencias}/>
+        <div>
+          <h1>{t("section.skills")}</h1>
+          </div>
+        <Habilidades habilidades={dados.habilidades}/>
+        <ExportarPDF dados={dados}/>
 
-      <div>
-        <h1>
-          {t("section.certificates")}
-        </h1>
-        <CarouselCert certificados={certificados}/>
+        <div>
+          <h1>
+            {t("section.certificates")}
+          </h1>
+          <CarouselCert certificados={certificados}/>
+        </div>
       </div>
-      
     </div>
   );
 }
