@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Habilidades from './components/Habilidades';
 import Experiencia from './components/Experiencia';
