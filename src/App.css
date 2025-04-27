@@ -1,32 +1,134 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #4a90e2;
+  padding: 20px;
   color: white;
+  border-bottom: 4px solid #357abd;
+  
+}
+
+.App h1{
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #4a90e2;
+}
+
+.App input {
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.App button{
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  /* padding: 10px 15px; */
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.App button:hover{
+  background-color: #357abd;
+}
+
+.App ul{
+  list-style: none;
+  padding: 0;
+
+}
+
+.App li{
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.App h1, h2{
+  color: #4a90e2;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
 }
+
+.App-link:hover {
+  color: #357abd;
+ 
+}
+
+.slick-prev, .slick-next{
+  font-size: 0;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slick-prev:hover, .slick-next:hover{
+  background-color: #357abd;
+  transform: scale(1.1);
+}
+
+.slick-prev:before, .slick-next:before{
+  font-size: 20px;
+  color: white;
+}
+
+.slick-next{
+  right: -50px;
+}
+
+.slick-prev{
+  left: -50px;
+}
+
+
+
+@media (max-width: 768px) {
+  .App input{
+    width: 90%;
+  }
+
+  .App li{
+    width: 90%;
+  }
+    
+  
+}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +137,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.foto{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  place-items: start;
+}
+
+.foto img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-left: 10px
+}
+
+.App .botaoIdioma{
+  padding: 20px;
 }
