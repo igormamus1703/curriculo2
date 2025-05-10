@@ -82,76 +82,75 @@ function App() {
   const certificados = [
     {
       image: require('./assets/certificado1_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey: "content.titleCertificates.title1",
 
     },
     {
     image: require("./assets/certificado2_page-0001.jpg"),
-    titulo:"curso jpa e hibernate",
+    tituloKey:"content.titleCertificates.title2",
     },
     {
       image: require('./assets/certificado3_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title3",
 
     },
     {
       image: require('./assets/certificado4_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title4",
 
     },
     {
       image: require('./assets/certificado5_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title5",
 
     },
     {
       image: require('./assets/certificado6_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title6",
 
     },
     {
       image: require('./assets/certificado7_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title7",
 
     },
     {
       image: require('./assets/certificado8_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
-
+      tituloKey:"content.titleCertificates.title8",
     },
     {
       image: require('./assets/certificado9_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title9",
 
     },
     {
       image: require('./assets/certificado10_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title10",
 
     },
     {
       image: require('./assets/certificado11_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title11",
 
     },
     {
       image: require('./assets/certificado12_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title12",
 
     },
     {
       image: require('./assets/certificado13_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title13",
 
     },
     {
       image: require('./assets/certificado14_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey:"content.titleCertificates.title14",
 
     },
     {
       image: require('./assets/certificado15_page-0001.jpg'),
-      titulo:"Curso alura Kotlin e Spring Boot",
+      tituloKey: "content.titleCertificates.title15",
 
     },
   ];

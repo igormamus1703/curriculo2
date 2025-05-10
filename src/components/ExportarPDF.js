@@ -59,7 +59,7 @@ const ExportarPDF = ({ dados }) => {
     };
 
     // Perfil
-    novaSecao("Perfil Profissional");
+    novaSecao(t('section.profile'));
     const perfilLinhas = pdf.splitTextToSize(
       dados.descricao,
       pageWidth - 2 * margin
@@ -68,7 +68,7 @@ const ExportarPDF = ({ dados }) => {
     y += perfilLinhas.length * lineHeight + sectionGap;
 
     // Experiência
-    novaSecao("Experiência Profissional");
+    novaSecao( t('section.experience'));
     dados.experiencias.forEach((exp) => {
       // Cargo
       pdf.setFont("helvetica", "bold");
@@ -96,7 +96,7 @@ const ExportarPDF = ({ dados }) => {
     });
 
     // Habilidades
-    novaSecao("Habilidades Técnicas");
+    novaSecao(t('section.skills'));
     const skillsLinhas = pdf.splitTextToSize(
       dados.habilidades.join(", "),
       pageWidth - 2 * margin

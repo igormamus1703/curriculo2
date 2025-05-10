@@ -2,56 +2,40 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
+const CarouselCert = ({ certificados }) => {
+  const { t } = useTranslation();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <div style={{ display: "none" }} />,
+    prevArrow: <div style={{ display: "none" }} />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1, slidesToScroll: 1 }
+      }
+    ]
+  };
 
-const CarouselCert = ({certificados}) => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        nextArrow: <div style={{display: "none"}}></div>,
-        prevArrow: <div style={{display: "none"}}></div>,
-    };
-
-    return (
-        <div style= {{padding: "20px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        }}>
-            <Slider {...settings}style= {{width: "80%", maxWidth: "800px"}}>
-                {certificados.map((certificado, index) => (
-                    <div key={index}style={{
-                        padding: "10px",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        textAlign: "center", }} >
-                        <img 
-                        src={certificado.image} 
-                        alt={certificado.titulo} 
-                        style={{width: "80%", 
-                                maxWidth: "800px",
-                                borderRadius: "10px",
-                                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                                }}/>
-                        <h3 style={{marginTop: "15px",
-                                fontSize: "1.5rem",
-                                color:"4a90e2",
-                                fontWeight: "bold"
-                        }}>{certificado.titulo}</h3>
-                    </div>
-                ))}
-                </Slider>
-
-        </div>
-    );
+  return (
+    <div className="carousel-container">
+      <Slider {...settings} className="carousel-slider">
+        {certificados.map((certificado, index) => (
+          <div key={index} className="carousel-slide">
+            <img src={certificado.image} alt={certificado.tituloKey} />
+            <h3>{t(certificado.tituloKey)}</h3>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
 };
 
 export default CarouselCert;

@@ -182,3 +182,52 @@
   text-align: left;
   max-width: 500px;
 }
+
+/* Container geral do carrossel */
+.carousel-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* antes era 100vh */
+}
+
+/* Slider em si */
+.carousel-slider {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Cada slide */
+.carousel-slide {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Imagem do certificado */
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título abaixo da imagem */
+.carousel-slide h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Breakpoint para mobile */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 10px;
+  }
+}
