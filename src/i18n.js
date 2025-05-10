@@ -19,13 +19,13 @@ const recursos = {
                 exportPDF: "Save PDF",
             },
             content: { // <-- Nova seção para conteúdos dinâmicos
-                profileDescription: "Computer Science student with hands-on experience in full-stack development. Proficient in Java ecosystem and modern frameworks for building robust APIs and responsive interfaces.",
+                profileDescription: "Computer Science student with two years of Java experience and hands-on expertise in full-stack development using Spring Boot, Quarkus and Jakarta EE to build robust APIs and responsive interfaces.",
                 experiences: [ // <-- Experiências traduzidas
                     {
                         position: "Software Development Intern",
                         company: "Celepar",
                         period: "May 2023 - Present",
-                        description: "Development of corporate systems using Java Spring Boot and PostgreSQL. Implementation of RESTful APIs, SQL query optimization, and participation in full development cycles using Agile methodologies."
+                        description: "Development of corporate systems using Java  and PostgreSQL. Implementation of RESTful APIs, SQL query optimization, and participation in full development cycles using Agile methodologies."
                     },
                     {
                         position: "Administrative Intern",
@@ -71,13 +71,13 @@ const recursos = {
                 exportPDF: "Exportar PDF",
             },
             content: { // 
-                profileDescription: "Estudante de Ciência da Computação na PUCPR com experiência prática em desenvolvimento full-stack. Domínio do ecossistema Java e frameworks modernos para construção de APIs robustas e interfaces responsivas.",
+                profileDescription: "Estudante de Ciência da Computação na PUCPR com dois anos de experiência em Java e conhecimento em Spring Boot, Quarkus e Jakarta EE, com prática em desenvolvimento full-stack para construção de APIs robustas e interfaces responsivas.",
                 experiences: [
                     {
                         position: "Estagiário em Desenvolvimento de Software",
                         company: "Celepar",
                         period: "Maio de 2023 - Atualmente",
-                        description: "Desenvolvimento de sistemas corporativos com Java Spring Boot e PostgreSQL. Implementação de APIs RESTful, otimização de queries SQL e participação em ciclos completos de desenvolvimento utilizando metodologias ágeis."
+                        description: "Desenvolvimento de sistemas corporativos com Java  e PostgreSQL. Implementação de APIs RESTful, otimização de queries SQL e participação em ciclos completos de desenvolvimento utilizando metodologias ágeis."
                     },
                     {
                         position: "Estagiário Administrativo",

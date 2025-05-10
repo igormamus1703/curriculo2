@@ -74,7 +74,14 @@ function App() {
       "Jakarta EE",
       "Quarkus", 
       "Python",
-      "c++"
+      "c++",
+      "Git",
+      "Docker",
+      "Design Patterns",
+      "Linux",
+      "RestFul Apis",
+      "JavaScript",
+      "Node.js"
     ],
     foto: fotoPerfil,
   };
