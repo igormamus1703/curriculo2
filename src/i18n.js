@@ -39,6 +39,7 @@ const recursos = {
                         title2:"Java and JDBC: Working with a Database",
                         title3:"Java OOP: Understanding Object-Oriented Programming",
                         title4:"JavaScript and HTML: Develop a Game and Practice Programming Logic",
+                        // eslint-disable-next-line no-script-url
                         title5: "JavaScript: Programming in the Web Language",
                         title6: "JavaSE 7 Programmer I Certification",
                         title7: "JavaSE 7 Programmer I Certification: Creating and Using Arrays",
@@ -90,6 +91,7 @@ const recursos = {
                         title2:"Java e JDBC: Trabalhando com um banco de dados",
                         title3:"Java OO: Entendo a Orientação a Objetos",
                         title4:"JavaScript e HTML: Desenvolva jogo e pratique lógica de programação",
+                        // eslint-disable-next-line no-script-url
                         title5:"JavaScript: Programando na linguagem WEB",
                         title6:"Certificação JavaSE 7 Programmer I",
                         title7:"Certificação JavaSE 7 Programmer I: Criando e usando arrays",
