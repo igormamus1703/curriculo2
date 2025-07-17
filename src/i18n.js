@@ -24,7 +24,7 @@ const recursos = {
                     {
                         position: "Software Development Intern",
                         company: "Celepar",
-                        period: "May 2023 - Present",
+                        period: "May 2023 - May 2025",
                         description: "Development of corporate systems using Java  and PostgreSQL. Implementation of RESTful APIs, SQL query optimization, and participation in full development cycles using Agile methodologies."
                     },
                     {
@@ -76,7 +76,7 @@ const recursos = {
                     {
                         position: "Estagiário em Desenvolvimento de Software",
                         company: "Celepar",
-                        period: "Maio de 2023 - Atualmente",
+                        period: "Maio de 2023 - Maio de 2025",
                         description: "Desenvolvimento de sistemas corporativos com Java  e PostgreSQL. Implementação de APIs RESTful, otimização de queries SQL e participação em ciclos completos de desenvolvimento utilizando metodologias ágeis."
                     },
                     {
