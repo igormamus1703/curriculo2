@@ -77,13 +77,13 @@ const recursos = {
                         position: "Estagiário em Desenvolvimento de Software",
                         company: "Celepar",
                         period: "Maio de 2023 - Maio de 2025",
-                        description: "Desenvolvimento de sistemas corporativos com Java  e PostgreSQL. Implementação de APIs RESTful, otimização de queries SQL e participação em ciclos completos de desenvolvimento utilizando metodologias ágeis."
+                        description: "Como estagiário na Celepar, contribui com o desenvolvimento de sistemas corporativos através das ferramentas de Java e PostgreSQL. Além da Implementação de APIs RESTful, otimização de queries SQL e participação em ciclos completos de desenvolvimento utilizando metodologias ágeis."
                     },
                     {
                         position: "Estagiário Administrativo",
                         company: "Ministério Público do Paraná",
                         period: "Fevereiro de 2019 - Dezembro de 2020",
-                        description: "Gestão de documentos jurídicos e suporte à digitalização de processos. Automação de fluxos de trabalho e organização de arquivos físicos/digitais para aumento de produtividade setorial."
+                        description: "No Ministério Público do Paraná tive a oportunidade de acompanhar e organizar a gestão de documentos jurídicos e oferecer suporte à digitalização de processos. Dessa forma, contribuindo com a automação de fluxos de trabalho e organização de arquivos físicos/digitais para aumento de produtividade setorial."
                     }
                 ],
                 titleCertificates:{
